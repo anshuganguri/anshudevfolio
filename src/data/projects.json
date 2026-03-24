@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Nexus Dashboard",
+    "description": "A real-time analytics platform for SaaS metrics. Features live WebSocket data, drag-and-drop widgets, and AI-powered insights.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+    "tech": ["React", "TypeScript", "Node.js", "PostgreSQL", "WebSockets"],
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Folio CMS",
+    "description": "Headless CMS with a visual block editor, multi-tenant support, and GraphQL API. Used by 200+ content creators.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+    "tech": ["Next.js", "GraphQL", "Prisma", "AWS S3"],
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Pulse API",
+    "description": "Open-source REST framework with auto-generated docs, rate limiting, and JWT auth. 2k+ GitHub stars.",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80",
+    "tech": ["Python", "FastAPI", "Redis", "Docker"],
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Stride Mobile",
+    "description": "Cross-platform fitness tracker with ML-based form analysis, social challenges, and offline sync.",
+    "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&q=80",
+    "tech": ["React Native", "TensorFlow.js", "Supabase"],
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Ether Commerce",
+    "description": "Headless e-commerce storefront with edge rendering, instant search, and A/B testing built-in.",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+    "tech": ["Next.js", "Shopify", "Algolia", "Vercel"],
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "DevLog CLI",
+    "description": "Terminal tool to track dev time, auto-generate changelogs from commits, and sync with JIRA/Linear.",
+    "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&q=80",
+    "tech": ["Go", "SQLite", "JIRA API"],
+    "github": "https://github.com",
+    "demo": "https://example.com",
+    "featured": false
+  }
+]

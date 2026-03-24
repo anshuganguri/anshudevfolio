@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --scrollbar-thumb: #8a8a42;
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  html {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  body {
+    background-color: #f5f5dc; /* cream */
+    color: #1a1a14; /* ink */
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .dark body {
+    background-color: #1a1a14;
+    color: #f5f5dc;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #8a8a42; border-radius: 3px; }
+}
+
+@layer components {
+  .section-tag {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #828c2d;
+  }
+
+  .dark .section-tag {
+    color: #b4ba81;
+  }
+
+  .section-heading {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    color: #1a1a14;
+  }
+
+  @media (min-width: 768px) {
+    .section-heading {
+      font-size: 3rem;
+    }
+  }
+
+  .dark .section-heading {
+    color: #f5f5dc;
+  }
+
+  .card-base {
+    background-color: white;
+    border: 1px solid #d8d8b8;
+    border-radius: 1rem;
+  }
+
+  .dark .card-base {
+    background-color: #252510;
+    border-color: #525224;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #6b6b30;
+    color: #f5f5dc;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background-color: #525224;
+    transform: scale(1.02);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #a3a35e;
+    color: #525224;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+  }
+
+  .dark .btn-outline {
+    border-color: #8a8a42;
+    color: #b4ba81;
+  }
+
+  .btn-outline:hover {
+    background-color: #eeeedd;
+    transform: scale(1.02);
+  }
+
+  .dark .btn-outline:hover {
+    background-color: #3a3a1a;
+  }
+
+  .btn-outline:active {
+    transform: scale(0.98);
+  }
+
+  .noise-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+}
+
+/* Typing cursor */
+.typing-cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+/* Reveal animations via IntersectionObserver */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
