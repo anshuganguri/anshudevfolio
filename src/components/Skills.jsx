@@ -1,27 +1,24 @@
 import { useEffect, useRef, useState } from 'react'
 import {
-  SiReact, SiTypescript, SiNodedotjs, SiNextdotjs,
-  SiPython, SiPostgresql, SiDocker,
-  SiGraphql, SiRedis, SiVuedotjs, SiTailwindcss,
+  SiReact, SiMysql, SiNodedotjs, SiNextdotjs, SiPostgresql, SiDocker, SiTailwindcss,
   SiGit, SiFigma,
+  SiJavascript,
 } from 'react-icons/si'
-import { FaAws } from "react-icons/fa";
+import { FaAws, FaJava } from "react-icons/fa";
 
 const categories = {
   Frontend: [
     { name: 'React',       icon: SiReact,       level: 95 },
-    { name: 'TypeScript',  icon: SiTypescript,  level: 88 },
     { name: 'Next.js',     icon: SiNextdotjs,   level: 85 },
-    { name: 'Vue.js',      icon: SiVuedotjs,    level: 72 },
     { name: 'Tailwind',    icon: SiTailwindcss, level: 90 },
     { name: 'Figma',       icon: SiFigma,       level: 70 },
   ],
   Backend: [
     { name: 'Node.js',    icon: SiNodedotjs,  level: 90 },
-    { name: 'Python',     icon: SiPython,     level: 82 },
-    { name: 'GraphQL',    icon: SiGraphql,    level: 78 },
+    { name: 'Java',       icon: FaJava,  level: 85 },
+    { name: 'JavaScript', icon: SiJavascript, level: 82 },
     { name: 'PostgreSQL', icon: SiPostgresql, level: 80 },
-    { name: 'Redis',      icon: SiRedis,      level: 72 },
+    { name: 'MySQL',      icon: SiMysql, level: 75 },
   ],
   DevOps: [
     { name: 'AWS', icon: FaAws, level: 75 },

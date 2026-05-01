@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 
 const stats = [
-  { value: 5,    suffix: '+', label: 'Years experience' },
-  { value: 40,   suffix: '+', label: 'Projects shipped' },
-  { value: 12,   suffix: '',  label: 'Open source repos' },
-  { value: 99,   suffix: '%', label: 'Client satisfaction' },
+  { value: 300, suffix: '+', label: 'DSA problems solved' },
+  { value: 15, suffix: '+', label: 'Mini projects built' },
+  { value: 8, suffix: '', label: 'Technologies explored' },
+  { value: 5, suffix: '', label: 'Hackathons attended' },
 ]
 
 const skills = ['React', 'TypeScript', 'Node.js', 'Next.js', 'Python', 'PostgreSQL', 'AWS', 'Docker', 'GraphQL', 'Redis']
@@ -49,14 +49,11 @@ export default function About() {
             </h2>
             <div className="space-y-4 reveal reveal-delay-2">
               <p className="font-body text-ink/70 dark:text-cream/70 leading-relaxed">
-                I'm a full-stack developer based in San Francisco with a passion for building
-                products that combine technical rigor with thoughtful design. I believe great software
-                is invisible — it just works, delightfully.
+                Code with logic. Secure with intent. Create with passion.<br></br>
+                I’m a third-year B.Tech student exploring cybersecurity and software engineering, with a growing love for web development.
               </p>
               <p className="font-body text-ink/70 dark:text-cream/70 leading-relaxed">
-                When I'm not pushing pixels or wrangling APIs, you'll find me contributing to
-                open-source projects, writing about web performance, or exploring the mountains
-                with a camera in hand.
+                Outside the technical world, I express myself through music, classical dance, and art—because creativity isn’t limited to code.
               </p>
             </div>
 
